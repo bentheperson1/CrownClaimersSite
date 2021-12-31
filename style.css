@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+
+body {
+  margin: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#videobcg {
+  width: inherit;
+  height: inherit;
+  -o-filter: blur(15px);
+  filter: blur(15px);
+  object-fit: cover;
+  transform: scale(1.06); /* scale up to hide the edge blur */
+}
+
+#video_overlays {
+  top: 30%;
+  left: 50%;
+  width: 30%;
+  height: 30%;
+  margin-top: -15%; /* Half the height */
+  margin-left: -15%;
+  z-index: 999992;
+  position: absolute;
+  image-rendering: pixelated;
+}
+
+#bg {
+  top: 110%;
+  left: 50%;
+  width: 100%;
+  height: 70%;
+  margin-top: -35%; /* Half the height */
+  margin-left: -50%;
+  text-align: center;
+  z-index: 99999;
+  position: absolute;
+  image-rendering: pixelated;
+  font-family: "Mukta", sans-serif;
+  color: white;
+}
+
+#bg2 {
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -50%; /* Half the height */
+  margin-left: -50%;
+  text-align: center;
+  z-index: 99999;
+  position: absolute;
+  image-rendering: pixelated;
+  font-family: "Mukta", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+button {
+  background-color: #aa0404;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 1%;
+}
